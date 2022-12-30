@@ -1,4 +1,4 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   current: null,
@@ -21,7 +21,7 @@ export const spreadSelectorSlice = createSlice({
 
 export const { setSelection, clearSelection } = spreadSelectorSlice.actions;
 
-export const selectCurrentSpread= (state) => state.spreadSelector.current;
-export const selectSpreadOptions= (state) => state.spreadSelector.options;
+// export const selectCurrentSpread= (state) => state.spreadSelector.current;
+// export const selectSpreadOptions= (state) => state.spreadSelector.options;
 
 export default spreadSelectorSlice.reducer;

@@ -5,8 +5,10 @@
   background-repeat: repeat;
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 10%;
+  flex-direction: column;
 }
 
 .app-content {
@@ -18,11 +20,11 @@
 
 @media (min-width: 400px) {
   .app-content {
-    width: 80%;
+    width: 90%;
   }
 }
 @media (min-width: 800px) {
   .app-content {
-    width: 70%;
+    width: 85%;
   }
 }

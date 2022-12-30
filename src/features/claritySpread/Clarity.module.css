@@ -1,0 +1,12 @@
+.one_row_spread {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  /* flex-direction: column; */
+}
+
+@media (min-width: 700px) {
+  .one-row-spread {
+    flex-direction: row;
+  }
+}

@@ -1,12 +1,11 @@
 import React from 'react'
 import styles from './SpreadSelector.module.css';
 import { useSelector, useDispatch } from 'react-redux';
-import { setSelection, clearSelection, selectCurrentSpread, selectSpreadOptions } from './spreadSelectorSlice';
+import { setSelection, clearSelection } from './spreadSelectorSlice';
 
 const SpreadSelector = () => {
   const dispatch = useDispatch();
-  const currentSpread = useSelector(selectCurrentSpread)
-  const options = useSelector(selectSpreadOptions)
+  const spread = useSelector(state => state.spreadSelector)
 
   const handleChange = (e) => dispatch(setSelection(e.target.value))
   
@@ -14,7 +13,7 @@ const SpreadSelector = () => {
     <div>
       <select onChange={handleChange}>
         <option value={null}>Choose your spread</option>
-        {options.map(option => <option key={option} value={option}>{option}</option>)}
+        {spread.options.map(option => <option key={option} value={option}>{option}</option>)}
       </select>
     </div>
   )
