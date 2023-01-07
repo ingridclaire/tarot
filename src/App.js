@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <div className="app-content">
         <ContentWrapper>
-          <SpreadSelector />
+          {!current && <SpreadSelector />}
           {current === 'Clarity' && <Clarity />}
         </ContentWrapper>
       </div>

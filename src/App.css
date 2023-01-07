@@ -9,6 +9,7 @@
   align-items: center;
   padding-top: 10%;
   flex-direction: column;
+  font-family: Roboto, Montserrat;
 }
 
 .app-content {

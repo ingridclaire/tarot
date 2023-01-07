@@ -1,8 +1,13 @@
 .container {
+  position: relative;
   width: 100%;
   background-color: rgba(255,255,255,0.4);
   border-radius: 20px;
   min-height: 80vh;
   padding: 20px;
   box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+}
+
+.title {
+  text-align: center;
 }

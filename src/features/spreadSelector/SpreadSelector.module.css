@@ -1,0 +1,22 @@
+.spread {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.spread_dropdown {
+  padding: 15px;
+  background-color: rgba(230, 0, 115, 0.8);
+  border-radius: 15px;
+  color: white;
+  font-size: 26px;
+}
+
+.option {
+  background: rgb(230, 0, 115);
+}
